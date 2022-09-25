@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let vay = +prompt("Hãy nhập số tiền vay: ");
+        let laixuat = +prompt("Hãy nhập lãi xuất: ");
+        let nam = +prompt("Hãy nhập số năm vay: ");
+        let tienlai = vay * (laixuat/100);
+        let tientra = vay + nam * tienlai;
+        
+        document.write("Số tiền lãi là: " +tienlai);
+        document.write("<br/>");
+        document.write("Số tiền phải trả sau "+nam+" vay là: " +tientra);
+    </script>
+</body>
+</html>
